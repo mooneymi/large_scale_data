@@ -21,7 +21,7 @@ If you don't have Git installed, you can get it at the link below (available for
 
 Once you have Git installed, from the command-line you can simply change to the directory where you want to clone this repo and then run the following:
 
-`git clone https://github.com/mooneymi/bioinformatics_programming.git`
+`git clone https://github.com/mooneymi/large_scale_data.git`
 
 
 #### Github Desktop
@@ -51,7 +51,7 @@ If you simply want to view the lecture materials online (note: you won't be able
 
 [https://nbviewer.jupyter.org/](https://nbviewer.jupyter.org/)
 
-To view any lecture, go to the site above and enter "mooneymi/bioinformatics_programming" in the search box. Then click the link for any of the .ipynb files (Jupyter notebooks) listed.
+To view any lecture, go to the site above and enter "mooneymi/large_scale_data" in the search box. Then click the link for any of the .ipynb files (Jupyter notebooks) listed.
 
 ### Jupyter and R
 
