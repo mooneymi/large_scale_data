@@ -53,6 +53,6 @@ If you simply want to view the lecture materials online (note: you won't be able
 
 To view any lecture, go to the site above and enter "mooneymi/large_scale_data" in the search box. Then click the link for any of the .ipynb files (Jupyter notebooks) listed.
 
-### Jupyter and R
+### Conda, Jupyter, and R
 
-Note that one of the notebooks for the class is written in R. If you haven't used used Jupyter with R before, you may want to look at my brief tutorial first: ['Jupyter and R: Getting Started'](https://github.com/mooneymi/jupyter_notebooks/blob/master/r/Getting_Started_R.ipynb)
+Note that one of the notebooks for the class is written in R. If you haven't used used Jupyter with R before, more info on using Conda to create an R environment can be found here (the `r-essentials` package will allow you to use R in Jupyter): [https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/](https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/)
