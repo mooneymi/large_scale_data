@@ -1,11 +1,17 @@
 ## Welcome to Management & Processing of Large-scale Data
 
-To get started, you'll need to clone this repository to your computer.
+### Viewing the Lectures Online
+
+If you simply want to view the lecture materials online (note: you won't be able to interact with the code examples), you can do so using the Jupyter nbviewer site:
+
+[https://nbviewer.jupyter.org/mooneymi/large_scale_data](https://nbviewer.org/github/mooneymi/large_scale_data/tree/master/)
+
+To view any lecture, follow the link above then click on any of the .ipynb (Jupyter notebooks) or .md (Markdown) files listed. When viewing notebooks on the nbviewer site, there will be a download icon in the upper right corner if you want to download and run the notebook on your local machine.
 
 
 ### Cloning the Repo
 
-The simplest way to get the class materials is to click the "Clone or download" button above and download a .zip archive of all the materials. However, this won't create a Git repository on your local machine (you'll simply be copying the files). Following the steps below to clone the repo on your local computer will give you some familiarity with Github and the Git version control system, which will definitely come in handy in the future.
+The simplest way to get all the class materials is to click the "Clone or download" button above and download a .zip archive of all the materials. However, this won't create a Git repository on your local machine (you'll simply be copying the files). Following the steps below to clone the repo on your local computer will give you some familiarity with Github and the Git version control system, which will definitely come in handy in the future.
 
 #### Git on the Command-line
 
@@ -45,13 +51,6 @@ Once you've cloned the repo to you computer, open a terminal and go to the direc
 
 A new tab should open in your web browser that lists all the available lectures. Click on the link for "BMI535_Week2_Python_Data_Solutions.ipynb". This should open the notebook in a new tab.
 
-### Viewing the Lectures Online
-
-If you simply want to view the lecture materials online (note: you won't be able to interact with the code examples), you can do so using the Jupyter nbviewer site:
-
-[https://nbviewer.jupyter.org/mooneymi/large_scale_data](https://nbviewer.org/github/mooneymi/large_scale_data/tree/master/)
-
-To view any lecture, follow the link above then click on any of the .ipynb (Jupyter notebooks) or .md (Markdown) files listed. When viewing notebooks on the nbviewer site, there will be a download icon in the upper right corner if you want to download and run the notebook on your local machine.
 
 ### Conda, Jupyter, and R
 
