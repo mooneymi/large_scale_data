@@ -49,7 +49,7 @@ Once you've cloned the repo to you computer, open a terminal and go to the direc
 
 `jupyter notebook`
 
-A new tab should open in your web browser that lists all the available lectures. Click on the link for "BMI535_Week2_Python_Data_Solutions.ipynb". This should open the notebook in a new tab.
+A new tab should open in your web browser that lists all the available lectures. Click on the link for "BMI535_Week_2.1_Python_Data_Solutions.ipynb". This should open the notebook in a new tab.
 
 
 ### Conda, Jupyter, and R
