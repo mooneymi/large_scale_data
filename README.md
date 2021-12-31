@@ -11,7 +11,7 @@ To view any lecture, follow the link above then click on any of the .ipynb (Jupy
 
 ### Cloning the Repo
 
-The simplest way to get all the class materials is to click the "Clone or download" button above and download a .zip archive of all the materials. However, this won't create a Git repository on your local machine (you'll simply be copying the files). Following the steps below to clone the repo on your local computer will give you some familiarity with Github and the Git version control system, which will definitely come in handy in the future.
+The simplest way to get all the class materials is to click the "Code" button above and then "Download ZIP". However, this won't create a Git repository on your local machine (you'll simply be copying the files). Following the steps below to clone the repo on your local computer will give you some familiarity with Github and the Git version control system, which will definitely come in handy in the future.
 
 #### Git on the Command-line
 
