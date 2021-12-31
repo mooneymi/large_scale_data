@@ -49,9 +49,9 @@ A new tab should open in your web browser that lists all the available lectures.
 
 If you simply want to view the lecture materials online (note: you won't be able to interact with the code examples), you can do so using the Jupyter nbviewer site:
 
-[https://nbviewer.jupyter.org/](https://nbviewer.jupyter.org/)
+[https://nbviewer.jupyter.org/mooneymi/large_scale_data](https://nbviewer.org/github/mooneymi/large_scale_data/tree/master/)
 
-To view any lecture, go to the site above and enter "mooneymi/large_scale_data" in the search box. Then click the link for any of the .ipynb files (Jupyter notebooks) listed.
+To view any lecture, follow the link above then click on any of the .ipynb (Jupyter notebooks) or .md (Markdown) files listed. When viewing notebooks on the nbviewer site, there will be a download icon in the upper right corner if you want to download and run the notebook on your local machine.
 
 ### Conda, Jupyter, and R
 
