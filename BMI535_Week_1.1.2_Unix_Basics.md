@@ -155,11 +155,11 @@ In general, `miniconda` is a good setup for installing software where you don't 
 Go to your directory in `/home/courses/BMI535/students/` on `state`.
 
 ```
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-sha256sum Miniconda3-latest-Linux-x86_64.sh #Make sure this matches the sum here at
+wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh
+sha256sum Miniconda3-py38_4.10.3-Linux-x86_64.sh #Make sure this matches the sum here at
 # https://docs.conda.io/en/latest/miniconda.html#linux-installers
 # look at python 3.8
-bash Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-py38_4.10.3-Linux-x86_64.sh
 ```
 
 I'm going to install `miniconda` in my folder on `state`. Agree to the terms, and then when asked, install it to your folder on state:
