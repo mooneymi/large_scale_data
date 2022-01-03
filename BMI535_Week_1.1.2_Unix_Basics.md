@@ -70,7 +70,7 @@ We will be using our `.bashrc` file to alter settings in our shell, including ou
 
 
 ```
-export PATH="/home/courses/BMI535/students/mooneymi/bin/:$PATH"
+export PATH="/home/courses/BMI535/students/mooneymi/bin:$PATH"
 ```
 
 
@@ -95,7 +95,7 @@ nano .bashrc
 Add the export line to your file:
 
 ```
-export PATH="/home/courses/BMI535/students/mooneymi/bin/:$PATH"
+export PATH="/home/courses/BMI535/students/mooneymi/bin:$PATH"
 ```
 
 Save (control-o) and exit (control-x)
