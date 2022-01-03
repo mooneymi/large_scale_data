@@ -5,20 +5,20 @@
 You will first need to connect through `acc.ohsu.edu`
 
 ```
-ssh laderast@acc.ohsu.edu
+ssh <username>@acc.ohsu.edu
 ```
 
-Once you're in there:
+Once you're connected there:
 
 ```
-ssh state
+ssh state.ohsu.edu
 ```
 
 ## `pwd` - where am I?
 
 When you sign into your account, you'll be in your *home directory* - this is a directory that houses your files
 
-What is the absolute path to here? You can use `pwd` to find it.
+What is the absolute path to your home directory? You can use `pwd` to find it.
 
 ```
 pwd
@@ -70,7 +70,7 @@ We will be using our `.bashrc` file to alter settings in our shell, including ou
 
 
 ```
-export PATH="/home/users/laderast/bwa-0.7.17/:$PATH"
+export PATH="/home/courses/BMI535/students/mooneymi/bin/:$PATH"
 ```
 
 
@@ -95,10 +95,10 @@ nano .bashrc
 Add the export line to your file:
 
 ```
-export PATH="/home/users/laderast/bwa-0.7.17/:$PATH"
+export PATH="/home/courses/BMI535/students/mooneymi/bin/:$PATH"
 ```
 
-Save and exit (control-x)
+Save (control-o) and exit (control-x)
 
 
 
@@ -112,12 +112,12 @@ If you made a change and want it to run in your current session, you can use `so
 source ~/.bashrc
 ```
 
-## Check your path and try running bwa
+## Check your path and find the location of the `bwa` application
 
 ```
 echo $PATH
 
-bwa
+which bwa
 ```
 
 ## What did we just learn?
@@ -165,7 +165,7 @@ bash Miniconda3-latest-Linux-x86_64.sh
 I'm going to install `miniconda` in my folder on `state`. Agree to the terms, and then when asked, install it to your folder on state:
 
 ```
-/home/courses/BMI535/students/laderast/miniconda3
+/home/courses/BMI535/students/<username>/miniconda3
 ```
 
 ## Add `miniconda` to your $PATH
@@ -173,7 +173,7 @@ I'm going to install `miniconda` in my folder on `state`. Agree to the terms, an
 Edit your `~/.bashrc` file, and add the installation location to your $PATH:
 
 ```
-export PATH="/home/courses/BMI535/students/laderast/miniconda3/bin:$PATH"
+export PATH="/home/courses/BMI535/students/<username>/miniconda3/bin:$PATH"
 ```
 
 then source your `~/.bashrc` file:
@@ -223,11 +223,13 @@ python print_this.py
 ./print_this.py
 ```
 
-# Very Helpful: `tmux`
+# Very Helpful: `tmux` or `screen`
 
 When you want to run an interactive job and be able to sign out. Your job will keep running. This is especially helpful when you're on `exacloud`. 
 
 https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+
+https://linuxize.com/post/how-to-use-linux-screen/
 
 
 
