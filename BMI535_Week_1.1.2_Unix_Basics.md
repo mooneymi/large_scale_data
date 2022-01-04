@@ -195,6 +195,11 @@ There are two YAML files in the course folder that specify dependencies needed f
 conda env create -f /home/courses/BMI535/scripts/bmi535-py_env.yml
 conda env create -f /home/courses/BMI535/scripts/bmi535-r_env.yml
 ```
+Now activate the bmi535-py environment and locate Python:
+```
+conda activate bmi535-py
+which python
+```
 
 ## `conda` tutorial
 
