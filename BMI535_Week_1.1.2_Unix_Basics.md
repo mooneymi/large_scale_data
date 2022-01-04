@@ -188,6 +188,14 @@ check if your `conda` is accessible:
 which conda
 ```
 
+## Create `conda` environments
+There are two YAML files in the course folder that specify dependencies needed for this class. You'll use them to create one environment for Python and one for R. Take a look at the two files (e.g. use `nano` or `less`) before running the commands below:
+
+```
+conda env create -f /home/courses/BMI535/scripts/bmi535-py_env.yml
+conda env create -f /home/courses/BMI535/scripts/bmi535-r_env.yml
+```
+
 ## `conda` tutorial
 
 https://geohackweek.github.io/Introductory/01-conda-tutorial/
