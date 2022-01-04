@@ -200,6 +200,7 @@ Now activate the bmi535-py environment and locate Python:
 conda activate bmi535-py
 which python
 ```
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
 ## `conda` tutorial
 
