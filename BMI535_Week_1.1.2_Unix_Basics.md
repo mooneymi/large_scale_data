@@ -270,7 +270,7 @@ fi
 Finding all jobs that you're running:
 
 ```
-ps -u laderast
+ps -u mooneymi
 ```
 
 Killing a job using `kill` (only works on your jobs)
