@@ -19,6 +19,7 @@ https://github.com/gatk-workflows/gatk4-data-processing
 - https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 - Download: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
 
+**Note: For the commands below you should start in your ACC home directory on state. Also, you'll need to swap in your username anywhere you see "laderast".
 ```
 ## Download FASTQC
 wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
