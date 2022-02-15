@@ -19,23 +19,24 @@ https://github.com/gatk-workflows/gatk4-data-processing
 - https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 - Download: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
 
-**Note: For the commands below you should start in your ACC home directory on state. Also, you'll need to swap in your username anywhere you see "laderast".
+**Note: For the commands below you should start in your home directory (cd ~) on state. Also, you'll need to swap in your username anywhere you see <username>.
 ```
-## Download FASTQC
-wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
-unzip fastqc_v0.11.9.zip
-chmod 711 [fastqc directory]
+## Create symbolic link to your course folder
+ln -s /home/courses/BMI535/students/<username> ~/BMI535
 
-# add my FastQC directory to the PATH variable
-# you can add this to your .bash_profile
-export PATH="$HOME/FastQC/:$PATH"
-# create a symbolic link called ~/var_data to easily access the data
+## Create a symbolic link called ~/var_data to easily access the data
 ln -s /home/courses/BMI535/data/VariantCalling/ ~/var_data
 
-# create symbolic link
-ln -s /home/courses/BMI535/students/laderast ~/BMI535/
+## Download FASTQC, unzip, and change permissions
+wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
+unzip fastqc_v0.11.9.zip
+chmod 711 FastQC
 
-#make an output directory
+## Add my FastQC directory to the PATH variable
+## You can add this to your .bash_profile
+export PATH="$HOME/FastQC/:$PATH"
+
+## Make an output directory
 mkdir ~/qc_analyses
 
 fastqc -o ~/qc_analyses ~/var_data/fastq/SRR702072_1.filt.fastq ~/var_data/fastq/SRR702072_2.filt.fastq
@@ -46,21 +47,24 @@ fastqc -o ~/qc_analyses ~/var_data/fastq/SRR702072_1.filt.fastq ~/var_data/fastq
 Main page: http://bio-bwa.sourceforge.net/
 
 ```
+## Move to your course folder 
+## (output for steps below may be too large for your home directory)
+cd /home/courses/BMI535/students/<username>
+
+## Install BWA
 conda install -c bioconda bwa
 which bwa
 ```
 
 ```
-
-# run bwa index to create index on hg19 genome file
-# You don't need to run this - it's already created
-# Just included so you know that this is a step
+## Run bwa index to create index on hg19 genome file
+## *** You don't need to run this - it's already created ***
+## *** Just included so you know that this is a step ***
 bwa index ~/var_data/GATKBundle/ucsc.hg19.fasta
 ```
 
 ```
-# run bwa mem on our fastq file
-# run this in your student folder
+## Run bwa mem on our fastq file
 bwa mem -Y -t 12 -R '@RG\tID:SRR702072\tPL:Illumina\tLB:SRR702072\tSM:SRR702072' ~/var_data/GATKBundle/ucsc.hg19.fasta ~/var_data/fastq/SRR702072_1.filt.fastq ~/var_data/fastq/SRR702072_2.filt.fastq -o SRR702072.sam
 ```
 
@@ -69,6 +73,7 @@ bwa mem -Y -t 12 -R '@RG\tID:SRR702072\tPL:Illumina\tLB:SRR702072\tSM:SRR702072'
 Install samtools via conda
 
 ```
+## Install Samtools
 conda install -c bioconda samtools
 ```
 
@@ -88,11 +93,13 @@ wget https://github.com/broadinstitute/gatk/releases/download/4.1.4.1/gatk-4.1.4
 ```
 
 ```
-#list all utilities
+## List all utilities
 gatk --list
-#convert SAM to BAM file
+
+## Convert SAM to BAM file
 gatk SamFormatConverter -I SRR702072.sam -O SRR702072.bam
-#sort BAM file using SortSam
+
+## Sort BAM file using SortSam
 gatk SortSam -I SRR702072.bam -O sortedSRR702072.bam -SO coordinate
 ```
 
