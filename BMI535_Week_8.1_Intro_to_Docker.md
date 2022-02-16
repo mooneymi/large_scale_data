@@ -1,5 +1,6 @@
 # What Data Analysts Need to Know About Docker
 ### Ted Laderas
+### 
 
 ![](images/containers-vs-virtual-machines.jpg)
 https://www.weave.works/blog/a-practical-guide-to-choosing-between-docker-containers-and-vms
