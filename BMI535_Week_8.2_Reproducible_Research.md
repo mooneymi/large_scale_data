@@ -38,10 +38,6 @@ https://biodata-club.github.io/talks/repro_paper.pdf
   - `environment.yml` (for a conda based software environment): https://github.com/binder-examples/python-conda_pip/blob/master/environment.yml
   - `requirements.txt` (for Python Projects): https://github.com/binder-examples/requirements/blob/master/requirements.txt
 
-## Running and Executing a Binder
-
-[demo]
-
 ## Some Lessons We learned in Starting a Binder
 
 https://github.com/biodev/HNSCC_Notebook
