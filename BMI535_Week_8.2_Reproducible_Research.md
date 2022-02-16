@@ -1,4 +1,4 @@
-# Introduction to Binder for Reproducible Research<br><sup>Ted Laderas</sup>
+# Introduction to Binder for Reproducible Research<br><br><sup>Ted Laderas</sup>
 
 Last week we talked about Docker and how it can enable reproducible research. This week we will be talking about a technology called Binder that leverages Docker so you can share research reproducibly.
 
