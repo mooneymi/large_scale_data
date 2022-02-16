@@ -69,7 +69,7 @@ Docker requires **system-level access** to your machine (the equivalent of root 
 ![Docker Volumes](images/docker-volumes.jpg)
 https://codeblog.dotsandbrackets.com/persistent-data-docker-volumes/
 
-Volumes let you use files and folders outside of the built in container file system. In our `docker run` statement, we'll make the following volume.
+Volumes let you use files and folders outside of the built in container file system. 
 
 ## Broad Institute GATK Docker Image
 
