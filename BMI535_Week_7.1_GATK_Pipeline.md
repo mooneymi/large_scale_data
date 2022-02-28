@@ -31,6 +31,7 @@ ln -s /home/courses/BMI535/data/VariantCalling/ ~/var_data
 wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
 unzip fastqc_v0.11.9.zip
 chmod 711 FastQC
+chmod 755 FastQC/fastqc
 
 ## Add my FastQC directory to the PATH variable
 ## You can add this to your .bash_profile
