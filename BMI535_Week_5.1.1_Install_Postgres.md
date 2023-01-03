@@ -1,8 +1,8 @@
-# CREATING the Database and user
+# Installing Postgres and CREATING the Database
 
 It's easiest to do this by [creating a new conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) (which can then be used to run the SQL jupyter notebooks as well), as follows: 
 
-create a conda environment using the following commands **(in Terminal for Mac users or Anaconda Prompt for Windows users):** 
+Create a conda environment using the following commands **(in Terminal for Mac users or Anaconda Prompt for Windows users):** 
 
     conda create --name bmi535-db
 
@@ -10,17 +10,17 @@ create a conda environment using the following commands **(in Terminal for Mac u
 
     conda install -c conda-forge psycopg2 ipython-sql postgresql pgspecial
 
-enable use of this conda env as jupyter kernel: 
+Install the jupyter kernel so you can run notebooks from this environment: 
 
     conda install ipykernel
 
-Then, also in your Anaconda Prompt (on Windows) or your Terminal (on Mac) and run the following:
+Then, also in your Anaconda Prompt (on Windows) or your Terminal (on Mac) run the following:
 
 ## For Windows users
 
 You can also set the `PGDATA` environment variable using the control panel. 
 
-Make sure to sub your `USERNAME` on your machine here. If your windows user name has a space use quotes, e.g. `createdb "Ted Laderas"`
+Make sure to sub your `USERNAME` on your machine here. If your windows user name has a space use quotes, e.g. `createdb "John Doe"`
 
 ```
 #set the database location
@@ -29,8 +29,9 @@ Make sure to sub your `USERNAME` on your machine here. If your windows user name
 setx PGDATA C:\Anaconda\pgdata
 
 ```
-Note: you may need to re-start Anaconda Prompt after setting the environment variable. Ensure the conda environment you created above is activated in the new prompt. 
+**Note: you may need to re-start Anaconda Prompt after setting the environment variable. Ensure the conda environment you created above is activated in the new prompt. 
 
+**Note: the `createdb` command below will create a user database with the current username, remember this because you'll need to use the same username to connect to any database in the future.
 
 ```
 #make the database directory
@@ -39,15 +40,13 @@ mkdir %PGDATA%
 pg_ctl initdb
 # start the postgres daemon (process that runs in background)
 pg_ctl start
-# create a user name so you can access the database
-createdb <USERNAME>
-# open the prompt so we can add a database
+# create a user database (by default the database name is the current username)
+createdb
+# open the prompt so we can add another database
 psql
 ```
 
 ## For Mac users
-
-Make sure to sub your `USERNAME` on your machine here. 
 
 ```
 #set the database location
@@ -67,8 +66,8 @@ mkdir $PGDATA
 pg_ctl initdb
 pg_ctl start
 
-#see above for information about username
-createdb <USERNAME>
+#create a user database (again, the default will be your current username)
+createdb
 #open the postgres prompt
 psql 
 ```
