@@ -2,7 +2,7 @@
 
 ## Connecting to `state`
 
-You will first need to connect through `acc.ohsu.edu`
+You will first need to connect through `acc.ohsu.edu` (you should be able to skip this step if you are on-campus, connected to the secure OHSU network)
 
 ```
 ssh <username>@acc.ohsu.edu
@@ -70,6 +70,13 @@ We will be using our `.bashrc` file to alter settings in our shell, including ou
 
 
 ```
+export PATH="/home/courses/BMI535/bin:$PATH"
+```
+
+You can also create a folder in your student folder where you'll install tools for the course. Then you can add this folder to your path.
+
+```
+## Remember to change the username below
 export PATH="/home/courses/BMI535/students/mooneymi/bin:$PATH"
 ```
 
@@ -95,7 +102,7 @@ nano .bashrc
 Add the export line to your file:
 
 ```
-export PATH="/home/courses/BMI535/students/mooneymi/bin:$PATH"
+export PATH="/home/courses/BMI535/bin:$PATH"
 ```
 
 Save (control-o) and exit (control-x)
@@ -155,10 +162,13 @@ In general, `miniconda` is a good setup for installing software where you don't 
 Go to your directory in `/home/courses/BMI535/students/` on `state`.
 
 ```
-wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh
-sha256sum Miniconda3-py38_4.10.3-Linux-x86_64.sh #Make sure this matches the sum here at
+wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
+sha256sum Miniconda3-py310_22.11.1-1-Linux-x86_64.sh 
+
+#Make sure this matches the sum here at
 # https://docs.conda.io/en/latest/miniconda.html#linux-installers
 # look at python 3.8
+
 bash Miniconda3-py38_4.10.3-Linux-x86_64.sh
 ```
 
