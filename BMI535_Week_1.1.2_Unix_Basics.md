@@ -77,7 +77,7 @@ You can also create a folder in your student folder where you'll install tools f
 
 ```
 ## Remember to change the username below
-export PATH="/home/courses/BMI535/students/mooneymi/bin:$PATH"
+export PATH="/home/courses/BMI535/students/<username>/bin:$PATH"
 ```
 
 
@@ -167,9 +167,9 @@ sha256sum Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
 
 #Make sure this matches the sum here at
 # https://docs.conda.io/en/latest/miniconda.html#linux-installers
-# look at python 3.8
+# look at python 3.10
 
-bash Miniconda3-py38_4.10.3-Linux-x86_64.sh
+bash Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
 ```
 
 I'm going to install `miniconda` in my folder on `state`. Agree to the terms, and then when asked, install it to your folder on state:
@@ -280,7 +280,7 @@ fi
 Finding all jobs that you're running:
 
 ```
-ps -u mooneymi
+ps -u <username>
 ```
 
 Killing a job using `kill` (only works on your jobs)
