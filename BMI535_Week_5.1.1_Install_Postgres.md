@@ -8,11 +8,11 @@ Create a conda environment using the following commands **(in Terminal for Mac u
 
     conda activate bmi535-db
 
-    conda install -c conda-forge psycopg2 ipython-sql postgresql pgspecial
+    conda install -c conda-forge python=3.10 sqlalchemy=1.4 psycopg2 ipython-sql postgresql pgspecial
 
 Install the jupyter kernel so you can run notebooks from this environment: 
 
-    conda install ipykernel
+    conda install ipykernel notebook
 
 Then, also in your Anaconda Prompt (on Windows) or your Terminal (on Mac) run the following:
 
@@ -85,11 +85,13 @@ Then continue on here, running the cells below.
 
 # Cloning the Repository
 
-Run the following to clone this GitHub repository onto your local machine: 
+If you haven't yet cloned the course GitHub repository to your local computer, run the following (make sure you are in a folder were you want to save the course materials): 
 
     git clone https://github.com/mooneymi/large_scale_data.git
 
-Then run 'cd' on Windows (Anaconda Prompt) or 'pwd' on Mac (Terminal) to check file path -- will need to replace file paths below to access data files
+Otherwise, simply navigate (i.e. `cd`) to the folder where you previously cloned the repository. 
+
+Make a note of this location, as you'll need to input the path to the 'data' subdirectory in the next notebook.
 
 Now, you can start the jupyter notebook server in your terminal:
 
